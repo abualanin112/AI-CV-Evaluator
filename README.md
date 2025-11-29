@@ -25,7 +25,7 @@ A smart recruitment tool that automates the process of screening CVs against job
 1.  **Clone the repository**:
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/abualanin112/AI-CV-Evaluator
     cd cv_evaluator_project
     ```
 
