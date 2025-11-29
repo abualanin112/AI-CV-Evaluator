@@ -1,0 +1,23 @@
+{% extends 'evaluator/base.html' %} {% block content %}
+<div class="card shadow-sm">
+  <div class="card-body p-5">
+    <h2 class="header-title mb-4">Step 1: Define Job Requirements</h2>
+    <form method="post">
+      {% csrf_token %}
+      <div class="mb-3">
+        <label for="id_job_title" class="form-label fw-bold">Job Title</label>
+        {{ form.job_title }}
+      </div>
+      <div class="mb-3">
+        <label for="id_job_requirements" class="form-label fw-bold"
+          >Job Requirements & Description</label
+        >
+        {{ form.job_requirements }}
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg w-100">
+        Next: Upload CVs ➔
+      </button>
+    </form>
+  </div>
+</div>
+{% endblock %}

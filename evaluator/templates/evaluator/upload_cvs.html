@@ -1,0 +1,27 @@
+{% extends 'evaluator/base.html' %} {% block content %}
+<div class="card shadow-sm">
+  <div class="card-body p-5">
+    <h2 class="header-title mb-2">Step 2: Upload CVs</h2>
+    <p class="text-muted mb-4">For Job: <strong>{{ job.job_title }}</strong></p>
+
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="mb-4">
+        <label for="id_files" class="form-label fw-bold"
+          >Select CV Files (PDF, TXT, MD)</label
+        >
+        {{ form.files }}
+      </div>
+      <div class="alert alert-info">
+        <small
+          >ℹ️ Uploading multiple files will trigger the AI evaluation process.
+          This may take a few seconds per CV.</small
+        >
+      </div>
+      <button type="submit" class="btn btn-success btn-lg w-100">
+        Upload & Start Evaluation 🚀
+      </button>
+    </form>
+  </div>
+</div>
+{% endblock %}

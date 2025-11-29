@@ -1,0 +1,4 @@
+Name: Khaled Ahmed
+Email: khaled.dev97@gmail.com
+Skills: Python, Django, REST APIs, Docker
+Experience: 3 years as Backend Developer.

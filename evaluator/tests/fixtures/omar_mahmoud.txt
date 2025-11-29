@@ -1,0 +1,4 @@
+Name: Omar Mahmoud
+Email: omar.m@example.com
+Skills: React, JavaScript, CSS, HTML
+Experience: Frontend Developer with 2 years experience.
